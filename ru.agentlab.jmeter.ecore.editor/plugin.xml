@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated jmeter -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ru.agentlab.jmeter.ecore.model.jmeter.presentation.JmeterModelWizardID"
+            name="%_UI_JmeterModelWizard_label"
+            class="ru.agentlab.jmeter.ecore.model.jmeter.presentation.JmeterModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/JmeterModelFile.gif">
+         <description>%_UI_JmeterModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated jmeter -->
+      <editor
+            id="ru.agentlab.jmeter.ecore.model.jmeter.presentation.JmeterEditorID"
+            name="%_UI_JmeterEditor_label"
+            icon="icons/full/obj16/JmeterModelFile.gif"
+            extensions="jmeter"
+            class="ru.agentlab.jmeter.ecore.model.jmeter.presentation.JmeterEditor"
+            contributorClass="ru.agentlab.jmeter.ecore.model.jmeter.presentation.JmeterActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
